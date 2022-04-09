@@ -4,9 +4,69 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:ital@1&display=swap" rel="stylesheet">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- animate css  -->
+    <link rel="stylesheet" href="css/animate.min.css">
+    <!-- custom css  -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- title  -->
     <title>MoneyHoney</title>
 </head>
 <body>
-    <h1>linking to github </h1>
+  <!---------------- header start ------------------------>
+  <header>
+    <h1 class="animate__animated animate__backInDown mt-5">Money Honey</h1>
+    <div class="header-img text-center">
+      <img class="img-thumbnail" src="images/hand-drawn-cryptocurrency-concept-with-bitcoin_23-2149150535.webp" alt="">
+    </div>
+  </header>
+  <!---------------- header end ------------------------>
+  <!---------------- main start ------------------------>
+  <main>
+    <div class="container">
+      <div class="row">
+        <!---------------- main part left site start ------------------------>
+        <div class="col-12 col-md-6 mt-5">
+          <div class="site-img">
+            <img class="w-100 mt-5" src="images/money-bag-background-design_1270-41.webp" alt="">
+          </div>
+        </div>
+        <!---------------- main part left site end ------------------------>
+        <!---------------- main part right site start ------------------------>
+        <div class="col-12 col-md-6 banking">
+          <div class="calculation">
+            <h3 class="income-header text-center mt-5 text-white ">Income</h3>
+            <p class="text-center text-white" >Income: <input placeholder="  10000" type="number"> </p>
+            <h3 class="expenses text-center text-white mt-5">Expenses</h3>
+
+            <p class="text-center text-white" id="food-cost" >Food: <input placeholder="  3000" type="text"> </p>
+            <p class="text-center text-white" id="rent-cost" >Rent: <input placeholder="  2000" type="text"> </p>
+            <p class="text-center text-white" id="clothe-cost" >Clothe: <input placeholder="  500" type="text"> </p>
+
+            <p class="error-msg">Please enter a number</p>
+            <button class="calculate p-2 bg-info text-white" id="calculate-btn">Calculate</button>
+            <div class="t-expense text-white mt-4">
+              <h4 id="calculate-total">Total Expense: <span>5500</span></h4>
+              <h4 id="balance">Balance: <span>4500</span></h4>
+            </div>
+            <div class="saving-percentage">
+              <p>save: <input type="text" name="" id="">  % <button class="bg-info text-white p-2" >Save</button> </p>
+              <h4 class="text-white">Saving Amount: <span>2000</span></h4>
+              <h4 class="text-white">Remaining Balance: <span>2500</span></h4>
+            </div>
+          </div>
+        </div>
+      </div>
+  </main>
+  <!---------------- main part right site start ------------------------>
+ <!---------------------- Js linking start --------------------------->
+ <script src="js/main.js"></script>
+ <!---------------------- Js linking end--------------------------->
+
 </body>
-</html>
+</html>  

@@ -1,0 +1,30 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+/* header start  */
+header{
+    margin-top: 30px;
+    text-align: center;
+}
+header img{
+    margin-bottom: -20px;
+}
+/* header end  */
+.site-img{
+    margin-bottom: -20px;
+}
+/* main part right site start */
+.banking{
+    margin-top: 95px;
+    text-align: center;
+    background-color: rgb(148, 112, 64);
+    margin-bottom: 100px;
+}
+.calculate{
+    font-size: 20px;
+}
+/* main part right site end */
+/* for js */
+.error-msg{
+    display: none;
+}
