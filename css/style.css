@@ -28,3 +28,9 @@ header img{
 .error-msg{
     display: none;
 }
+.error-msg-neg{
+    display: none ;
+}
+.over-shopping{
+    display: none;
+}
