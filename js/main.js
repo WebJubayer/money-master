@@ -6,7 +6,7 @@ function getValue (cost){
     if (isNaN(amountValue)){
         document.getElementById('error-msg').style.display ='block';
         document.getElementById('error-msg-neg').style.display = 'none'
-        console.log(click);
+        
     }
     else if (amountValue < 0){
         document.getElementById('error-msg-neg').style.display = 'block';
@@ -33,7 +33,7 @@ function remain(){
 
     const expenses = foodAmount + rentAmount + clotheAmount;
     const totalExpenses = document.getElementById('total-expenses');
-    totalExpenses.innerText = expenses;
+    totalExpenses.innerText = expenses; 
     
     const incomeValue = getValue('income-input');
     if(incomeValue > expenses){
@@ -50,6 +50,29 @@ function remain(){
 document.getElementById('calculate-btn').addEventListener('click', function(){
     const balance = document.getElementById('balance');
     balance.innerText = remain();
+})
+
+// ====== saving and button listener =============
+document.getElementById('save-button').addEventListener('click', function(){
+    const incomeValue = getValue('income-input');
+    const savingValue = getValue('saving-input');
+    const totalSave = incomeValue * savingValue / 100;
+    const savingAmount = document.getElementById('saving-amount');
+    savingAmount.innerText = totalSave;
+    const previousBalance = remain();
+    const remainingBalance = document.getElementById('remaining-balance');
+
+    if (previousBalance > totalSave){
+        document.getElementById('').style.display = 'none';
+        remainingBalance.innerText = calculate(previousBalance, totalSave);
+    }
+    else{
+        document.getElementById('').style.display = 'block';
+        remainingBalance.innerText = 0;
+    }
+
+
+
 })
 
 

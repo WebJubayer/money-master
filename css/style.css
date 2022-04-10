@@ -25,12 +25,12 @@ header img{
 }
 /* main part right site end */
 /* for js */
-.error-msg{
+#error-msg{
     display: none;
 }
-.error-msg-neg{
+#error-msg-neg{
     display: none ;
 }
-.over-shopping{
+#over-shopping{
     display: none;
 }
